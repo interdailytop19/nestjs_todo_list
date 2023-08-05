@@ -10,3 +10,4 @@ export class User {
 }
 
 export const UserSchema = SchemaFactory.createForClass(User);
+UserSchema.index({ username: 1}, { unique: true });
